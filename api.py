@@ -2,8 +2,10 @@
 
 from flask import Flask
 from flask_restplus import Api, Resource
+from config import DevelopmentConfig as config
 
 app = Flask(__name__)
+app.config.from_object(config())
 api = Api(app)
 
 @api.route('/hello')
