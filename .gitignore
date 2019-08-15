@@ -1,0 +1,4 @@
+venv
+uwsgi.ini
+
+__pycache__/
